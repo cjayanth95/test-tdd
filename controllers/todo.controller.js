@@ -39,7 +39,9 @@ exports.updateTodoById = async (req, res, next) => {
             new: true,
             useFindAndModify: false
         });
-        res.status(200).json(updatedTodo);
+        if (updatedTodo)
+            res.status(200).json(updatedTodo);
+        else res.status(404).send();
     }
     catch (e) {
         next(e);
