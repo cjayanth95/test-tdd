@@ -12,14 +12,13 @@ async function connect() {
   } catch (e) {
     console.log(e);
   }
-
 }
 
 async function disconnect() {
-    try {
-      await mongoose.disconnect();
-    } catch (e) {
-      console.log(e);
-    }
+  try {
+    await mongoose.disconnect();
+  } catch (e) {
+    console.log(e);
   }
+}
 module.exports = { connect, disconnect };
