@@ -14,4 +14,11 @@ async function connect() {
   }
 }
 
-module.exports = { connect };
+async function disconnect() {
+  try {
+    await mongoose.disconnect();
+  } catch (e) {
+    console.log(e);
+  }
+}
+module.exports = { connect, disconnect };
