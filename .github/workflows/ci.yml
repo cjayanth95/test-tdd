@@ -36,7 +36,7 @@ jobs:
         run: npm run build
       - name: Upload build folder
         if: github.event_name == 'push'
-        users: actions/upload-artiface@v1
+        uses: actions/upload-artiface@v1
         with: 
           name: build
           path: build
