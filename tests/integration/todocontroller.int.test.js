@@ -69,7 +69,7 @@ describe(endpointUrl, () => {
       .send(updatedData);
     expect(response.statusCode).toBe(404);
   });
-  
+
   afterAll(async () => {
     await app.disconnect();
   });
