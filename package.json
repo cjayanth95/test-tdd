@@ -7,7 +7,7 @@
     "test": "jest",
     "format:check" : "prettier --check \"**/*.{js, json}\"",
     "format" : "prettier --write \"**/*.{js, json}\"",
-    "build": "node server.js"
+    "build": ""
   },
   "keywords": [],
   "author": "",
