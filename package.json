@@ -5,12 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "format:check" : "prettier --check \"**/*.{js, json}\"",
-    "format" : "prettier --write \"**/*.{js, json}\"",
-    "build": ""
+    "format:check": "prettier --check \"**/*.{js, json}\"",
+    "format": "prettier --write \"**/*.{js, json}\"",
+    "build": "webpack"
   },
   "keywords": [],
-  "author": "",
+  "author": "Jayanth",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
@@ -20,6 +20,9 @@
   "devDependencies": {
     "jest": "^24.9.0",
     "prettier": "^2.7.1",
-    "supertest": "^4.0.2"
+    "semantic-release": "^19.0.5",
+    "supertest": "^4.0.2",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^4.10.0"
   }
 }
